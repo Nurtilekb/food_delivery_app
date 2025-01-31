@@ -18,11 +18,11 @@ class _SplashScreenState extends State<SplashScreen> {
   @override
   void initState() {
     super.initState();
-    // Timer(Duration(seconds: 10), () {
-    //   Navigator.of(context).pushAndRemoveUntil(
-    //       MaterialPageRoute(builder: (_) => FirstScreen()),
-    //       (Route<dynamic> route) => false);
-    // });
+    Timer(Duration(seconds: 10), () {
+      Navigator.of(context).pushAndRemoveUntil(
+          MaterialPageRoute(builder: (_) => FirstScreen()),
+          (Route<dynamic> route) => false);
+    });
   }
 
   @override
@@ -43,21 +43,28 @@ class _SplashScreenState extends State<SplashScreen> {
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
                   SizedBox(
-                    height: 227.h,
-                    width: 222.w,
+                    height: 227.27.h,
+                    width: 223.w,
                     child: Image.asset('assets/jpg/deliver.png'),
                   ),
-                  Text('FOOD RUNS', style: Styles.splashtext),
+                  Text('Food Runs', style: Styles.splashtext),
                 ],
               ),
             ),
-            Center(
-              child: Container(
-                height: 300,
-                width: 300,
-                child: null /* add child content here */,
-              ),
-            )
+            Positioned(
+                left: 100.sp,
+                top: 260.sp,
+                child: CircleAvatar(
+                  backgroundColor: Colors.red,
+                  radius: 15.sp,
+                )),
+            Positioned(
+                right: 100.sp,
+                top: 285.sp,
+                child: CircleAvatar(
+                  backgroundColor: Colors.red,
+                  radius: 10.sp,
+                ))
           ],
         ),
       ),

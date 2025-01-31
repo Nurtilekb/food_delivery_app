@@ -5,6 +5,7 @@ abstract class Styles {
   static TextStyle splashtext = TextStyle(
     fontSize: 50.sp,
     fontWeight: FontWeight.w800,
+    fontFamily: 'Avenir',
     color: Color(0xFFFF0000),
   );
   static TextStyle nexttext = TextStyle(
