@@ -78,8 +78,8 @@ flutter:
   fonts:
     - family: Avenir
       fonts:
-        - asset: assets/fonts/Avenir.zip
-       
+        - asset: assets/fonts/Avenir.ttf
+
 
   # For details regarding fonts from package dependencies,
   # see https://flutter.dev/to/font-from-package

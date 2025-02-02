@@ -11,7 +11,7 @@ class FirstScreen extends StatelessWidget {
         title: Text('Home Page'),
       ),
       body: Center(
-        child: Text('Food 22222222', style: Styles.splashtext),
+        child: Text('Food ', style: Styles.splashtext),
       ),
     );
   }

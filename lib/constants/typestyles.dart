@@ -12,7 +12,7 @@ abstract class Styles {
     fontSize: 16.sp,
     fontWeight: FontWeight.w400,
     fontFamily: 'Avenir',
-    color: Color(0xFFffffff),
+    color: Color.fromARGB(255, 23, 9, 9),
   );
   static TextStyle chickenburg = TextStyle(
     fontSize: 27.sp,
